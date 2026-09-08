@@ -1,36 +1,23 @@
 {
-  "expo": {
-    "name": "dettagli-hair-studio",
-    "slug": "snack-1677a8bd-0cb1-41bb-a5ec-09ad63b5eb47",
-    "scheme": "dettagliapp",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+  "cli": {
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "node": "22.11.0",
+      "developmentClient": true,
+      "distribution": "internal"
     },
-    "ios": {
-      "supportsTablet": true
+    "preview": {
+      "node": "22.11.0",
+      "distribution": "internal"
     },
-    "android": {
-      "package": "com.dettagliostudio.app",
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "a6724cb3-856d-4123-a9a7-63e8d0b9e730"
-      }
+    "production": {
+      "node": "22.11.0",
+      "autoIncrement": true
     }
+  },
+  "submit": {
+    "production": {}
   }
 }
